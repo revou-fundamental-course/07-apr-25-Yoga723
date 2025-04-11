@@ -1,0 +1,50 @@
+:root {
+  background-color: white;
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+  border: solid 2px black;
+  margin-top: 2px;
+}
+
+.revou-logo {
+  width: 55px;
+  height: 50px;
+}
+
+#nav-list {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#nav-list a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 4px 40px;
+  border-right: solid 1px black;
+}
+
+#nav-list a:hover {
+  text-decoration: underline;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+}
