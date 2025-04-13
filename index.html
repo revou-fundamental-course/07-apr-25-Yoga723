@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revou Portofolio Yoga723</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="/assets/logo-revou.webp" type="image/x-icon">
+
+    <!-- Import font italy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet"> // Font Italianno
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet"> // Font Radio Canada
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet"> // Font Jakarta Sans
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet"> // Font Austria
 </head>
 
 <body>
@@ -20,7 +32,65 @@
         </nav>
     </header>
     <main>
-        <section id="hero">Hero</section>
+        <section id="hero">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Gambar landscape 1" class="swiper-img" style="transform: scaleX(-1);" />
+                        <div class="hero-container italy">
+                            <h2>Italy</h2>
+                            <p>Experience the breathtaking beauty of Italy, where towering mountains rise above lush
+                                green forests and crystal-clear rivers wind through peaceful valleys. Let nature's charm
+                                captivate your senses in this unforgettable alpine paradise.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Gambar Canada" class="swiper-img" />
+                        <div class="hero-container canada">
+                            <h2>Canada</h2>
+                            <p>Experience the breathtaking beauty of Banff, where golden sunsets kiss the rugged tips of
+                                the Rocky Mountains. Surrounded by crystal-clear lakes like Lake Louise and Moraine
+                                Lake, this alpine paradise invites you to witness nature’s masterpiece reflected on
+                                tranquil waters.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assets/austria.jpg" alt="Gambar Austria" class="swiper-img" />
+                        <div class="hero-container austria">
+                            <h2>Austria</h2>
+                            <p>Experience Austria’s natural beauty—forests, mirror-like lakes, and majestic mountains
+                                surround charming villages like Hallstatt, offering a peaceful, storybook escape.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Gambar Indonesia" class="swiper-img" style="transform: scaleX(-1);" />
+                        <div class="hero-container indonesia">
+                            <h2>Indonesia</h2>
+                            <p>Experience the breathtaking charm of Indonesia, where fiery sunsets illuminate the peaks
+                                of majestic volcanoes like Mount Bromo and Rinjani. Nestled around these mountains are
+                                serene lakes such as Lake Toba and Segara Anak, offering a magical blend of vibrant
+                                skies and reflective waters that captivate the soul.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </section>
         <section id="OurProfile">Our Profile</section>
         <section id="Portofolio">Portofolio</section>
         <section id="MessageUs">Message Us</section>
@@ -30,6 +100,8 @@
     </footer>
 
     <script src="./js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
