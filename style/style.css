@@ -1,4 +1,4 @@
-/* Setting fonts */
+/* Setting fonts dari google font*/
 .italy {
   font-family: "Italianno", cursive;
   font-weight: 500;
@@ -30,16 +30,19 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5px 30px;
-  border: solid 2px black;
-  margin-top: 2px;
+  border: 2px solid black;
+  background: white;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 h2 {
@@ -47,6 +50,15 @@ h2 {
 }
 
 /* =================== HEADER STYLE ===================  */
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 0;
+  width: 100%;
+}
 
 .revou-logo {
   width: 55px;
@@ -100,7 +112,7 @@ h2 {
 }
 .swiper .swiper-slide .hero-container {
   color: white;
-  margin: 45vh 4rem;
+  margin: 45vh 64px;
   position: absolute;
   top: 0;
   left: 0;
@@ -114,35 +126,20 @@ h2 {
     max-width: 700px;
   }
 }
-@media (max-width: 768px) {
-  .swiper .swiper-slide {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper .swiper-slide img {
-    object-fit: fill;
-    width: 100%;
-    /* max-height: 850px; */
-    overflow: hidden;
-  }
-
-  .swiper .swiper-slide .hero-container {
-    margin: 0;
-  }
-}
 
 /* =================== OUR PROFILE STYLE ===================  */
 .our-profile {
   padding: 20px;
   border-bottom: solid 1px black;
-  .circle-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
+}
+.our-profile .circle-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  a {
+    text-decoration: none;
+    color: black;
   }
 }
 
@@ -150,6 +147,36 @@ h2 {
   display: flex;
   flex-direction: column;
   width: fit-content;
+}
+
+.our-profile .circle-profile:hover {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  cursor: pointer;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.our-profile .circle-profile:not(:hover) {
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
 }
 
 .our-profile .circle-image {
@@ -169,19 +196,150 @@ h2 {
 }
 
 /* =================== MESSAGE US STYLE ===================  */
+/* BAGIAN FORM */
 .message-us {
-  padding: 20px;
   display: flex;
-  flex-direction: row;
+  gap: 50px;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.message-form {
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.input-container .form-label {
+  flex-basis: 25%;
+  text-align: right;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.input-container input,
+.input-container textarea,
+.input-container .radio-group {
+  flex-basis: 75%;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+.input-container input,
+.input-container textarea {
+  border: solid 1.5px black;
+  border-radius: 2.5px;
+  -webkit-border-radius: 2.5px;
+  -moz-border-radius: 2.5px;
+  -ms-border-radius: 2.5px;
+  -o-border-radius: 2.5px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
   align-items: center;
-  justify-content: space-evenly;
 }
 
-.message-us form {
+.message-form button[type="submit"] {
   width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
-.message-us aside {
+.message-form button[type="submit"]:hover {
+  /* Generate dari css gradient generator */
+  cursor: pointer;
+  background: #51e0e0;
+  background: linear-gradient(176deg, rgba(81, 224, 224, 1) 0%, rgba(54, 149, 227, 1) 88%);
+}
+
+/* BAGIAN RESULT DARI FORM MESSAGE US */
+.message-us .message-result {
   width: 100%;
+  margin-top: 50px;
+  padding: 10px 15px;
+  font-weight: 700;
   border: solid 1px black;
 }
+.message-us .message-result span {
+  font-weight: 400;
+}
+
+/* =================== MOBILE STYLE =================== */
+/* ===================              =================== */
+
+@media (max-width: 826px) {
+  /* =================== HERO MOBILE STYLE =================== */
+
+  .swiper .swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    max-height: 300px;
+  }
+
+  .swiper .swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    max-height: 300px;
+  }
+
+  .swiper .swiper-slide .hero-container {
+    margin: 56px 16px 16px 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .swiper .swiper-slide .hero-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .swiper .swiper-slide .hero-container p {
+    font-size: 0.8rem;
+    max-width: 100%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+
+  /* =================== OUR PROFILE STYLE =================== */
+  .our-profile .circle-profile {
+    margin: 20px auto;
+  }
+  .our-profile .circle-profile .circle-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* =================== MESSAGE US STYLE =================== */
+  .message-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 0 30px 0;
+  }
+}
+
+/* :root{
+  background-color: black;
+  p,h1,h2,h3,h4,h5,h6,label{
+    color: white;
+  }
+} */

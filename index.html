@@ -27,20 +27,22 @@
 
 <body>
     <header id="header" class="header-style">
-        <img src="/assets/logo-revou.webp" alt="Logo Revou" class="revou-logo" />
+        <a href="#Hero"><img src="/assets/logo-revou.webp" alt="Logo Revou" class="revou-logo" /></a>
         <nav id="nav-list">
             <a href="#Hero">Home</a>
             <a href="#OurProfile">Our Profile</a>
-            <a href="#Portofolio">Portofolio</a>
             <a href="MessageUs">Message Us</a>
         </nav>
     </header>
     <main>
         <section id="Hero">
+            <h1 id="header-hero">Hi <span></span></h1>
+            <p>Ini adalah website latihan pertama</p>
+
             <div class="swiper">
-                <!-- Additional required wrapper -->
+
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+
                     <div class="swiper-slide">
                         <img src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             alt="Gambar landscape 1" class="swiper-img" style="transform: scaleX(-1);" />
@@ -64,7 +66,8 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="./assets/austria.jpg" alt="Gambar Austria" class="swiper-img" />
+                        <img src="./assets/austria.webp" alt="Gambar Austria" class="swiper-img"
+                            style="transform: scaleX(-1);" />
                         <div class="hero-container austria">
                             <h2 id="austria-header"></h2>
                             <p>Experience Austria’s natural beauty—forests, mirror-like lakes, and majestic mountains
@@ -83,15 +86,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
 
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
 
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
             </div>
 
         </section>
@@ -99,49 +97,87 @@
             <h2>Our Headquarter</h2>
             <div class="circle-container">
                 <!-- Gambar Itali -->
-                <div class="circle-profile italy">
-                    <img src="https://images.pexels.com/photos/31642018/pexels-photo-31642018/free-photo-of-majestic-statue-against-dramatic-cloudy-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di itali" />
-                    <p>Italy</p>
-                </div>
+                <a href="https://maps.app.goo.gl/mkpc8e9TynZ4qag3A" target="_blank">
+                    <div class="circle-profile italy">
+                        <img src="https://images.pexels.com/photos/31642018/pexels-photo-31642018/free-photo-of-majestic-statue-against-dramatic-cloudy-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di itali" />
+                        <p>Italy</p>
+                    </div>
+                </a>
 
                 <!-- Gambar Canada -->
-                <div class="circle-profile italy">
-                    <img src="https://images.pexels.com/photos/11558199/pexels-photo-11558199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di Canada" />
-                    <p>Canada</p>
-                </div>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    <div class="circle-profile canada">
+                        <img src="https://images.pexels.com/photos/11558199/pexels-photo-11558199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di Canada" />
+                        <p>Canada</p>
+                    </div>
+                </a>
 
                 <!-- Gambar Austria -->
-                <div class="circle-profile italy">
-                    <img src="https://images.pexels.com/photos/18145257/pexels-photo-18145257/free-photo-of-franz-josef-statue-burggarten-vienna-austria.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di itali" />
-                    <p>Austria</p>
-                </div>
+                <a href="https://maps.app.goo.gl/4nRbkefZob4ALYX16" target="_blank">
+                    <div class="circle-profile austria">
+                        <img src="https://images.pexels.com/photos/18145257/pexels-photo-18145257/free-photo-of-franz-josef-statue-burggarten-vienna-austria.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di itali" />
+                        <p>Austria</p>
+                    </div>
+                </a>
 
                 <!-- Gambar Indonesia -->
-                <div class="circle-profile italy">
-                    <img src="https://images.pexels.com/photos/13340411/pexels-photo-13340411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di itali" />
-                    <p>Indonesia</p>
-                </div>
+                <a href="https://maps.app.goo.gl/W6MW4xZsSYqiXB1M8" target="_blank">
+                    <div class="circle-profile indonesia">
+                        <img src="https://images.pexels.com/photos/6109262/pexels-photo-6109262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di itali" />
+                        <p>Indonesia</p>
+                    </div>
+                </a>
             </div>
         </section>
 
         <section id="MessageUs" class="indonesia message-us">
-            <form>
+            <form id="message-form" class="message-form indonesia">
                 <h2>Message Us</h2>
+
+                <!-- Input Nama -->
                 <div class="input-container">
-                    <label for="Nama" class="form-label">Nama :</label>
-                    <input type="text" name="Nama" id="Nama">
+                    <label for="nama" class="form-label">Nama :</label>
+                    <input type="text" name="nama" id="nama">
                 </div>
+
+                <!-- Input Tanggal Lahir -->
+                <div class="input-container">
+                    <label for="tglLahir" class="form-label">Tanggal Lahir :</label>
+                    <input type="date" name="tglLahir" id="tglLahir">
+                </div>
+
+                <!-- Input Jenis Kelamin -->
+                <div class="input-container">
+                    <label class="form-label">Jenis Kelamin :</label>
+                    <div class="radio-group">
+                        <label for="Laki-Laki" class="radio-label">
+                            <input type="radio" name="jenisKelamin" id="Laki-Laki" value="Laki-Laki"> Laki-Laki
+                        </label>
+                        <label for="Perempuan" class="radio-label">
+                            <input type="radio" name="jenisKelamin" id="Perempuan" value="Perempuan"> Perempuan
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Input Pesan -->
+                <div class="input-container">
+                    <label for="pesan" class="form-label">Pesan :</label>
+                    <textarea name="pesan" id="pesan" rows="5" placeholder="Pesan ..."></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
             </form>
+
             <aside class="message-result">
-                <h3 class="time"></h3>
-                <p id="hasil-nama">Yoga</p>
-                <p id="hasil-tglLahir"></p>
-                <p id="hasil-kelamin"></p>
-                <p id="hasil-pesan"></p>
+                <h3 class="time">Current time : <span>15151421412</span></h3>
+                <p>Nama : <span id="hasil-nama">Yoga723</span></p>
+                <p>Tanggal Lahir : <span id="hasil-tglLahir"></span></p>
+                <p>Jenis Kelamin : <span id="hasil-kelamin"></span></p>
+                <p>Pesan : <span id="hasil-pesan"></span></p>
             </aside>
         </section>
     </main>
