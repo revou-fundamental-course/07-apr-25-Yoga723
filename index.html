@@ -9,30 +9,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="/assets/logo-revou.webp" type="image/x-icon">
 
-    <!-- Import font italy -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Import font italy -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet"> // Font Italianno
+    <!-- Font Italianno -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <!-- Font Radio Canada -->
     <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet"> // Font Radio Canada
+        rel="stylesheet">
+    <!-- Font Jakarta Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet"> // Font Jakarta Sans
+        rel="stylesheet">
+    <!-- Font Austria -->
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap"
-        rel="stylesheet"> // Font Austria
+        rel="stylesheet">
 </head>
 
 <body>
     <header id="header" class="header-style">
         <img src="/assets/logo-revou.webp" alt="Logo Revou" class="revou-logo" />
         <nav id="nav-list">
-            <a href="#">Home</a>
+            <a href="#Hero">Home</a>
             <a href="#OurProfile">Our Profile</a>
             <a href="#Portofolio">Portofolio</a>
             <a href="MessageUs">Message Us</a>
         </nav>
     </header>
     <main>
-        <section id="hero">
+        <section id="Hero">
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -41,7 +45,7 @@
                         <img src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             alt="Gambar landscape 1" class="swiper-img" style="transform: scaleX(-1);" />
                         <div class="hero-container italy">
-                            <h2>Italy</h2>
+                            <h2 id="italy-header"></h2>
                             <p>Experience the breathtaking beauty of Italy, where towering mountains rise above lush
                                 green forests and crystal-clear rivers wind through peaceful valleys. Let nature's charm
                                 captivate your senses in this unforgettable alpine paradise.</p>
@@ -51,7 +55,7 @@
                         <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             alt="Gambar Canada" class="swiper-img" />
                         <div class="hero-container canada">
-                            <h2>Canada</h2>
+                            <h2 id="canada-header"></h2>
                             <p>Experience the breathtaking beauty of Banff, where golden sunsets kiss the rugged tips of
                                 the Rocky Mountains. Surrounded by crystal-clear lakes like Lake Louise and Moraine
                                 Lake, this alpine paradise invites you to witness nature’s masterpiece reflected on
@@ -62,7 +66,7 @@
                     <div class="swiper-slide">
                         <img src="./assets/austria.jpg" alt="Gambar Austria" class="swiper-img" />
                         <div class="hero-container austria">
-                            <h2>Austria</h2>
+                            <h2 id="austria-header"></h2>
                             <p>Experience Austria’s natural beauty—forests, mirror-like lakes, and majestic mountains
                                 surround charming villages like Hallstatt, offering a peaceful, storybook escape.</p>
                         </div>
@@ -71,7 +75,7 @@
                         <img src="https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                             alt="Gambar Indonesia" class="swiper-img" style="transform: scaleX(-1);" />
                         <div class="hero-container indonesia">
-                            <h2>Indonesia</h2>
+                            <h2 id="indonesia-header"></h2>
                             <p>Experience the breathtaking charm of Indonesia, where fiery sunsets illuminate the peaks
                                 of majestic volcanoes like Mount Bromo and Rinjani. Nestled around these mountains are
                                 serene lakes such as Lake Toba and Segara Anak, offering a magical blend of vibrant
@@ -91,12 +95,58 @@
             </div>
 
         </section>
-        <section id="OurProfile">Our Profile</section>
-        <section id="Portofolio">Portofolio</section>
-        <section id="MessageUs">Message Us</section>
-    </main>
-    <footer>
+        <section id="OurProfile" class="indonesia our-profile">
+            <h2>Our Headquarter</h2>
+            <div class="circle-container">
+                <!-- Gambar Itali -->
+                <div class="circle-profile italy">
+                    <img src="https://images.pexels.com/photos/31642018/pexels-photo-31642018/free-photo-of-majestic-statue-against-dramatic-cloudy-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di itali" />
+                    <p>Italy</p>
+                </div>
 
+                <!-- Gambar Canada -->
+                <div class="circle-profile italy">
+                    <img src="https://images.pexels.com/photos/11558199/pexels-photo-11558199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di Canada" />
+                    <p>Canada</p>
+                </div>
+
+                <!-- Gambar Austria -->
+                <div class="circle-profile italy">
+                    <img src="https://images.pexels.com/photos/18145257/pexels-photo-18145257/free-photo-of-franz-josef-statue-burggarten-vienna-austria.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di itali" />
+                    <p>Austria</p>
+                </div>
+
+                <!-- Gambar Indonesia -->
+                <div class="circle-profile italy">
+                    <img src="https://images.pexels.com/photos/13340411/pexels-photo-13340411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        class="img-fluid rounded-top circle-image" alt="Gambar Headquarter di itali" />
+                    <p>Indonesia</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="MessageUs" class="indonesia message-us">
+            <form>
+                <h2>Message Us</h2>
+                <div class="input-container">
+                    <label for="Nama" class="form-label">Nama :</label>
+                    <input type="text" name="Nama" id="Nama">
+                </div>
+            </form>
+            <aside class="message-result">
+                <h3 class="time"></h3>
+                <p id="hasil-nama">Yoga</p>
+                <p id="hasil-tglLahir"></p>
+                <p id="hasil-kelamin"></p>
+                <p id="hasil-pesan"></p>
+            </aside>
+        </section>
+    </main>
+    <footer style="display: flex; justify-content: center; border-top: solid 1px black;">
+        <p>Created by Yoga723</p>
     </footer>
 
     <script src="./js/javascript.js"></script>
